@@ -68,15 +68,3 @@ template <class T>
 bool GenStack<T>::isEmpty(){
   return (top == - 1);
 }
-
-//extend ...
-// template <class T>
-// void GenStack<T>::extendSize(){
-//   tempArray = new T[++mSize];
-//   for(int i = -1; i <= top; ++i){
-//     tempArray[i] = myArray[i]
-//   }
-//
-//   delete[] myArray;
-//   myArray = tempArray;
-// }

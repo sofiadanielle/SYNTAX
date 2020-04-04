@@ -26,5 +26,5 @@ private:
   T *myArray; // stack's array
   T *tempArray; // temporary array
 
-  void extendSize(); // if stack is full, increase size
+  //void extendSize(); // if stack is full, increase size
 };
