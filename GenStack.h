@@ -21,8 +21,6 @@ private:
   int top; // index of array, top of the stack
 
   char *myArray;
-  // T *myArray; // stack's array
-  // T *tempArray; // temporary array
 
   //void extendSize(); // if stack is full, increase size
 };
