@@ -3,8 +3,9 @@
 using namespace std;
 
 Delimeter::Delimeter(){ //constructor
-  stack = new GenStack<string>();
+//  stack = new GenStack<string>();
 
+  // set all count to 0
   lineCount = 0;
   leftBracket = 0;
   rightBracket = 0;
@@ -15,11 +16,11 @@ Delimeter::Delimeter(){ //constructor
 }
 
 Delimeter::~Delimeter(){ //destructor
-  delete stack;
+//  delete stack;
 }
 
 bool Delimeter::inStack(string fileName){
-  ifstream inFS(file);
+  ifstream inFS(fileName);
   bool run = true; // to use for while loop to continue
 
   //check for valid file
@@ -31,6 +32,7 @@ bool Delimeter::inStack(string fileName){
 }
 
 bool Delimeter::readString(string line, int lineCount){
+  char curr = '\0';
   for(int i = 0; i < line.length(); ++i){ //parse each character in string
     curr = line[i];
 

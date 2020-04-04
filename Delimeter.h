@@ -6,8 +6,6 @@
 
 using namespace std;
 
-template <class T>
-
 class Delimeter{
 public:
   Delimeter(); // default constructor
@@ -24,5 +22,5 @@ public:
   bool inStack(string fileName); // from file to stack
   bool readString(string line, int lineNum);// count of everything per line
 
-  GenStack<string> *stack;
+  //GenStack<string> *stack;
 };
